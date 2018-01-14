@@ -1,0 +1,62 @@
+main {
+    width: 100%;
+    .what-we-do {
+        height: 260vh;
+        @include flex(flex, column, flex-start);
+        .line {
+            position: relative;
+            height: 6vh;
+            width: 80%;
+            border-top: 0.3vh solid $line-color;
+            border-top-left-radius: 50%;
+            border-top-right-radius: 50%;
+            background: white;
+            margin-top: 10%;
+            margin-bottom: 5%;
+        }
+        .main-describe {
+            width: $getWidth;
+            @include flex(flex, column, center) img {
+                align-self: center;
+                transform: scale(.8);
+                width: 40vw;
+                margin-bottom: 5%;
+            }
+            h2 {
+                align-self: center;
+            }
+            p {
+                height: 12vh;
+                border-bottom: .3vh solid $line-color;
+            }
+        }
+        .specializations {
+            width: $getWidth;
+            margin-top: 5vh;
+            .can-do {
+                display: flex;
+                justify-content: space-between;
+                img {
+                    align-content: flex-start;
+                    height: 9vh;
+                    width: 9vh;
+                }
+                .spec-content {
+                    width: 70%;
+                    h2 {
+                        font-size: 1.1rem;
+                        line-height: 1.1em;
+                    }
+                    margin-bottom: 6vh;
+                }
+            }
+            .mobile {
+                img {
+                    margin-left: 2vh;
+                    width: 6vh;
+                }
+            }
+        }
+
+    }
+}

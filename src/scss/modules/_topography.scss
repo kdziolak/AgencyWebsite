@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&amp;subset=latin-ext');
+
+$getWidth: 75%;
+$height: 100vh;
+
+$ff-ss: 'Open Sans',
+sans-serif;
+
+$fw-n: 400;
+$fw-b: 900;
+
+$fs-n: 21px;
+$fs-m: 34px;
+
+$lh: 1.5em;
+
+@mixin background($bi,
+$bp: center,
+$bs: cover,
+$br: no-repeat) {
+    background-image: $bi;
+    background-position: $bp;
+    background-size: $bs;
+    background-repeat: $br;
+}
+
+@mixin flex($fx: flex,
+$fd: column,
+$jc: center,
+$ai: center) {
+    display: $fx;
+    flex-direction: $fd;
+    justify-content: $jc;
+    align-items: $ai;
+}

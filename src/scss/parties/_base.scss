@@ -1,0 +1,25 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: $ff-ss;
+    font-size: $fs-n;
+    font-weight: $fw-n;
+    line-height: $lh;
+    color: $gray-color;
+    overflow-x: hidden;
+}
+
+h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+p {
+    font-size: 1rem;
+    text-align: left;
+    line-height: 1.3;
+}

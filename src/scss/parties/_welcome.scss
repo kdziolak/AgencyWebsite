@@ -1,0 +1,112 @@
+.page-header {
+    .top-header {
+        display: none;
+    }
+    .logo-section {
+        height: 8vh;
+        .info {
+            display: none;
+        }
+    }
+    .navigation {
+        display: none;
+    }
+    .welcome {
+        @include background(url("../../img/iback@1X.png"));
+        height: 90vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        flex-wrap: wrap;
+        .intro {
+            align-self: flex-end;
+            h1 {
+                display: flex;
+                flex-direction: column;
+                position: relative;
+                z-index: 0;
+                color: white;
+                font-size: 1.6rem;
+                line-height: .9em;
+                .smaller-text {
+                    text-align: right;
+                    white-space: pre;
+                    font-size: 1.1rem;
+                    font-weight: 400;
+                }
+                .and-icon {
+                    position: absolute;
+                    font-size: 3rem;
+                    font-weight: $fw-b;
+                    color: $and-icon-color;
+                    top: 2vh;
+                    left: 0;
+                    z-index: -1;
+                }
+            }
+
+        }
+        .slider {
+            display: flex;
+            .slide {
+                position: relative;
+                display: flex;
+                .slide-img {
+                    height: 25vh;
+                    width: 25vh;
+                }
+                .slide-describe {
+                    align-self: flex-end;
+                    position: absolute;
+                    padding: .3rem 0;
+                    width: 100%;
+                    display: flex;
+                    justify-content: center;
+                    background-color: rgba(0, 0, 0, .2);
+                    img {
+                        transform: scale(.7);
+                        margin-right: .2rem;
+                    }
+                    p {
+                        align-self: center;
+                        font-size: 1.2rem;
+                        color: white;
+                    }
+                }
+            }
+            .next {
+                height: 25vh;
+                width: 10vh;
+                border: none;
+                outline: none;
+                font-size: 2rem;
+                font-weight: $fw-b;
+                text-align: center;
+                color: $gray-color;
+                padding-left: 1rem;
+            }
+        }
+    }
+    .information {
+        .article {
+            width: $getWidth;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 7vh;
+            .lamp {
+                transform: scale(0.6);
+                width: 40vw;
+            }
+            .tree {
+                transform: scale(0.6);
+                width: 40vw;
+            }
+            p {
+                text-align: justify;
+            }
+        }
+    }
+}

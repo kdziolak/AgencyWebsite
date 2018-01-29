@@ -1,0 +1,44 @@
+@media only screen and (orientation: landscape) {
+    main {
+        width: 100%;
+        .what-we-do {
+            .main-describe {
+                img {
+
+                    width: 25vw;
+                }
+                h2 {
+                    font-size: 1.7rem;
+                }
+                p {
+                    font-size: 1.2rem;
+                    height: 20vh;
+                }
+            }
+            .specializations {
+                margin-top: 10vh;
+                .can-do {
+                    justify-content: space-around;
+                    img {
+                        align-self: flex-start;
+                        height: 15vh;
+                        width: 15vh;
+                    }
+                    .spec-content {
+                        width: 75%;
+                        h2 {
+                            font-size: 1.3rem;
+                        }
+                        margin-bottom: 10vh;
+                    }
+                }
+                .mobile {
+                    img {
+                        width: 11vh;
+                    }
+                }
+            }
+        }
+    }
+
+}

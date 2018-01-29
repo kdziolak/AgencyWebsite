@@ -3,16 +3,57 @@
         display: none;
     }
     .logo-section {
-        height: 8vh;
+        position: relative;
+        height: 9vh;
+        .logo {
+            @include flex();
+            a {
+                img {
+                    width: 22vh;
+                    height: 11vh;
+                }
+            }
+        }
         .info {
             display: none;
         }
     }
     .navigation {
-        display: none;
+        .fa-bars {
+            z-index: 2;
+            position: fixed;
+            top: 2vh;
+            left: 2vh;
+            font-size: 2rem;
+            color: #3252B3;
+        }
+        nav {
+            z-index: 1;
+            height: 100vh;
+            width: 75%;
+            position: fixed;
+            top: 0;
+            left: -200vh;
+            transition: .4s ease-in;
+            padding-top: 10vh;
+            padding-left: 3vh;
+            background-color: $line-color;
+            .nav-list {
+                @include flex();
+                justify-content: space-around;
+                align-items: flex-start;
+                height: 65vh;
+                a {
+                    list-style-type: none;
+                }
+            }
+        }
+        input {
+            display: none;
+        }
     }
     .welcome {
-        @include background(url("../../img/iback@1X.png"));
+        @include background(url("../img/iback@1X.png"));
         height: 90vh;
         display: flex;
         align-items: center;
@@ -83,6 +124,7 @@
                 font-size: 2rem;
                 font-weight: $fw-b;
                 text-align: center;
+                background-color: $line-color;
                 color: $gray-color;
                 padding-left: 1rem;
             }

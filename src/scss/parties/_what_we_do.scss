@@ -1,7 +1,6 @@
 main {
     width: 100%;
     .what-we-do {
-        height: 260vh;
         @include flex(flex, column, flex-start);
         .line {
             position: relative;
@@ -47,7 +46,7 @@ main {
                         font-size: 1.1rem;
                         line-height: 1.1em;
                     }
-                    margin-bottom: 6vh;
+                    margin-bottom: 8vh;
                 }
             }
             .mobile {
@@ -57,6 +56,12 @@ main {
                 }
             }
         }
-
+        .divide {
+            height: 8vh;
+            width: 120%;
+            border-top-left-radius: 50%;
+            border-top-right-radius: 50%;
+            background-color: $line-color;
+        }
     }
 }

@@ -1,0 +1,49 @@
+main {
+    .team-section {
+        @include flex();
+        .boxes-team {
+            margin-bottom: 8vh;
+            .box-team {
+                @include flex();
+                justify-content: space-around;
+                height: 50vh;
+                width: 40vh;
+                background-color: $line-color;
+                border-radius: 3px;
+                margin-top: 8vh;
+                img {
+                    transform: scale(.7);
+                    border: 4px solid white;
+                    border-radius: 50%;
+                }
+                p {
+                    text-align: center;
+                    line-height: 1.4rem;
+                    margin-bottom: 2vh;
+                    .name {
+                        font-size: 1.3rem;
+                        font-weight: $fw-b;
+                    }
+                }
+                .social-media {
+                    width: 100%;
+                    background-color: white;
+                    text-align: center;
+                    margin-bottom: 3vh;
+                    a {
+                        width: 100%;
+                        color: $light-gray-color;
+                        span {
+                            padding: .7rem;
+                            font-size: 1.5rem;
+                            color: $light-gray-color;
+                        }
+                    }
+                }
+                &:first-child {
+                    margin-top: 3vh;
+                }
+            }
+        }
+    }
+}

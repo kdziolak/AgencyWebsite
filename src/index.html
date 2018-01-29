@@ -3,9 +3,12 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Gulp</title>
+    <title>Agency Website</title>
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <!-- build:css -->
     <link rel="stylesheet" href="css/main.css">
+    <!-- endbuild -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 </head>
 
 <body>
@@ -26,7 +29,7 @@
         </section>
         <section class="logo-section">
             <div class="logo">
-                <a href="#"><img src="" alt=""></a>
+                <a href="#"><img src="img/logo.png" alt="logo"></a>
             </div>
             <div class="info">
                 <span class="phone info-icon active"></span>
@@ -35,8 +38,9 @@
             </div>
         </section>
         <section class="navigation">
+            <button class="fa fa-bars"></button>
             <nav>
-                <ul class="nav">
+                <ul class="nav-list">
                     <a href="#">
                         <li class="home active">Home</li>
                     </a>
@@ -47,7 +51,7 @@
                         <li class="what-do">What we do ?</li>
                     </a>
                     <a href="#">
-                        <li class="projects">Our Projects</li>
+                        <li class="our-projects">Our Projects</li>
                     </a>
                     <a href="#">
                         <li class="team">Excellent Team</li>
@@ -144,11 +148,138 @@
                         <p>We offer a variety of design services ranging from Full Service Interior Design and Styling to our Design Concierge service, all of which are executed with beautiful, custom-tailored results.</p>
                     </div>
                 </div>
-
+            </div>
+            <div class="divide"></div>
+        </section>
+        <section class="projects">
+            <div class="head ">
+                <img src="img/phial.png" alt="phial">
+                <h2>Our Projects</h2>
+                <p>Some of our awesome work Proud of doing great works for our clients</p>
+            </div>
+            <div class="categories-btn">
+                <button class="btn all">All</button>
+                <button class="btn mobile-apps">
+                    Mobile Apps
+                </button>
+                <button class="btn identies active">
+                    Identies
+                </button>
+                <button class="btn design">
+                    Interior Design
+                </button>
+                <button class="btn ui-ux">
+                    UI/UX
+                </button>
+            </div>
+            <div class="boxes">
+                <div class="box">
+                    <div class="space-for-img">
+                        <img src="img/wacky-x-logo.jpg" alt="wacky">
+                    </div>
+                    <div class="project-btn">
+                        <button><img src="img/link.png" alt="link"></button>
+                        <button><img src="img/more.png" alt="more"></button>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="space-for-img">
+                        <img src="img/wacky-x-logo.jpg" alt="wacky">
+                    </div>
+                    <div class="project-btn">
+                        <button><img src="img/link.png" alt="link"></button>
+                        <button><img src="img/more.png" alt="more"></button>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="space-for-img">
+                        <img src="img/wacky-x-logo.jpg" alt="wacky">
+                    </div>
+                    <div class="project-btn">
+                        <button><img src="img/link.png" alt="link"></button>
+                        <button><img src="img/more.png" alt="more"></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="team-section">
+            <div class="head">
+                <img style="border-bottom-left-radius: 40%;
+                border-bottom-right-radius: 40%;" class='profile' src="img/profile.png" alt="profile">
+                <h2>Meet Our Team</h2>
+                <p>We have highly qualified staff with distinguished significant experiences in their field who work under pressure.</p>
+            </div>
+            <div class="boxes-team">
+                <div class="box-team">
+                    <img src="img/Tamer.png" alt="Tamer">
+                    <p>
+                        <span class="name">Tamer</span>
+                        <br> Senior Software Engineer</p>
+                    <div class="social-media">
+                        <a href=""><span class="fa fa-facebook-official"></span></a>
+                        <a href="#"><span class="fa fa-twitter" aria-hidden="true"></span></a>
+                        <a href="#"><span class="fa fa-instagram" aria-hidden="true"></span></a>
+                        <a href="#"><span class="fa fa-linkedin" aria-hidden="true"></span></a>
+                    </div>
+                </div>
+                <div class="box-team">
+                    <img src="img/Hazem.png" alt="Hazem">
+                    <p>
+                        <span class="name">Hazem</span>
+                        <br> PHP Developer
+                    </p>
+                    <div class="social-media">
+                        <a href=""><span class="fa fa-facebook-official"></span></a>
+                        <a href="#"><span class="fa fa-twitter" aria-hidden="true"></span></a>
+                        <a href="#"><span class="fa fa-instagram" aria-hidden="true"></span></a>
+                        <a href="#"><span class="fa fa-linkedin" aria-hidden="true"></span></a>
+                    </div>
+                </div>
+                <div class="box-team">
+                    <img src="img/Alex.png" alt="Alex">
+                    <p>
+                        <span class="name">Alex</span>
+                        <br> Front-End Developer
+                    </p>
+                    <div class="social-media">
+                        <a href=""><span class="fa fa-facebook-official"></span></a>
+                        <a href="#"><span class="fa fa-twitter" aria-hidden="true"></span></a>
+                        <a href="#"><span class="fa fa-instagram" aria-hidden="true"></span></a>
+                        <a href="#"><span class="fa fa-linkedin" aria-hidden="true"></span></a>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
-    <footer class="page-footer"></footer>
+    <footer>
+        <section class="foot-container">
+            <form>
+                <label>Enter your email for out newsletter</label>
+                <span class="fa fa-envelope-o" aria-hidden="true"></span>
+                <input type="text" placeholder="">
+                <button>join</button>
+            </form>
+            <div class="social-media">
+                <a href=""><span class="fa fa-facebook-official"></span></a>
+                <a href="#"><span class="fa fa-twitter" aria-hidden="true"></span></a>
+                <a href="#"><span class="fa fa-instagram" aria-hidden="true"></span></a>
+                <a href="#"><span class="fa fa-linkedin" aria-hidden="true"></span></a>
+            </div>
+            <div class="references">
+                <a href="#">Blog</a> &#8226;
+                <a href="#">Jobs</a> &#8226;
+                <a href="#">Terms of Service</a> &#8226;
+                <a href="#">Privacy</a> &#8226;
+                <a href="#">Policy</a>
+            </div>
+            <div class="copyright">
+                <p>© Copyright 2014 - ISAMA for information technology</p>
+            </div>
+        </section>
+    </footer>
+    <!-- build:js -->
+    <script src='js/script.js'></script>
+    <!-- endbuild -->
 </body>
 
 </html>

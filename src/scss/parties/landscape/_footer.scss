@@ -1,0 +1,43 @@
+@media only screen and (orientation: landscape) {
+    footer {
+        .foot-container {
+            padding-top: 10vh;
+            form {
+                label {
+                    font-size: 1.3rem;
+                    font-weight: $fw-b;
+                }
+                input {
+                    height: 17vh;
+                }
+                button {
+                    left: 83%;
+                    top: 47%;
+                    height: 12vh;
+                    width: 22vh;
+                    font-size: 1.4rem;
+                }
+                span {
+                    font-size: 1.7rem;
+                }
+            }
+            .social-media {
+                margin-top: 13vh;
+                font-size: 2.1rem;
+            }
+            .references {
+                font-size: 1.2rem;
+                line-height: 1.3rem;
+                margin-top: 15vh;
+            }
+            .copyright {
+                margin-top: 10vh;
+                p {
+                    width: 100%;
+                    font-size: 1rem;
+                }
+            }
+        }
+    }
+
+}

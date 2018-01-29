@@ -1,0 +1,76 @@
+@media only screen and (orientation: landscape) {
+    .page-header {
+        .logo-section {
+            height: 15vh;
+            .logo {
+                a {
+                    img {
+                        width: 40vh;
+                        height: 18vh;
+                    }
+                }
+            }
+        }
+        .navigation {
+            .fa-bars {
+                top: 3vh;
+                left: 5vh;
+                font-size: 2.3rem;
+            }
+            nav {
+                width: 50%;
+                padding-top: 15vh;
+                .nav-list {
+                    height: 70vh;
+                    a {
+                        font-size: 1.6rem;
+                    }
+                }
+            }
+        }
+        .welcome {
+            flex-direction: column;
+            .intro {
+                align-self: center;
+                padding-bottom: 5vh;
+                h1 {
+                    font-size: 2rem;
+                    line-height: .8em;
+                    .smaller-text {
+                        font-size: 1.3rem;
+                    }
+                    .and-icon {
+                        font-size: 3.8rem;
+                    }
+                }
+
+            }
+            .slider {
+                .slide {
+                    .slide-img {
+                        height: 38vh;
+                        width: 42vh;
+                    }
+                }
+                .next {
+                    height: 38vh;
+                    width: 15vh;
+                }
+            }
+        }
+        .information {
+            .article {
+                .lamp {
+                    width: 20vw;
+                }
+                .tree {
+                    width: 20vw;
+                }
+                p {
+                    font-size: 1.1rem;
+                }
+            }
+        }
+    }
+
+}

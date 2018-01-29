@@ -1,0 +1,47 @@
+@media only screen and (orientation: landscape) {
+    .projects {
+        .head {
+            img {
+                height: 50vh;
+                width: 45vh;
+            }
+            h2 {
+                font-size: 2rem;
+            }
+            p {
+                font-size: 1.1rem;
+            }
+        }
+        .categories-btn {
+            .btn {
+                height: 10vh;
+                margin-top: 2vh;
+                font-size: 1.1rem;
+            }
+        }
+        .boxes {
+            padding-top: 10vh;
+            width: $getWidth;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            .box {
+                height: 65vh;
+                width: 63vh;
+                margin-bottom: 10vh;
+                .project-btn {
+                    button {
+                        height: 15vh;
+                    }
+                }
+                .space-for-img {
+                    height: 47vh;
+                }
+            }
+            &:last-child {
+                margin-bottom: 3vh;
+            }
+        }
+    }
+
+}

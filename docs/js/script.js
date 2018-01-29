@@ -1,0 +1,1 @@
+var bar=document.querySelector(".fa-bars");function showMenu(){var e=document.getElementsByTagName("nav")[0];"0vh"===e.style.left?e.style.left="-200vh":e.style.left="0vh"}bar.addEventListener("click",showMenu);

@@ -1,0 +1,32 @@
+@media only screen and (orientation: landscape) {
+    main {
+        .team-section {
+            .head {
+                img {
+                    height: 50vh;
+                    width: 42vh;
+                }
+                h2 {
+                    font-size: 2rem;
+                }
+                p {
+                    font-size: 1.1rem;
+                }
+            }
+            .boxes-team {
+                width: 80%;
+                display: flex;
+                justify-content: space-between;
+                align-items: baseline;
+                flex-wrap: wrap;
+                .box-team {
+                    @include flex();
+                    justify-content: space-around;
+                    height: 80vh;
+                    width: 65vh;
+                }
+            }
+        }
+    }
+
+}

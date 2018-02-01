@@ -1,0 +1,40 @@
+@media only screen and (orientation: portrait) and (min-device-width: 600px) and (max-device-width: 1024px) {
+    main {
+        .what-we-do {
+            .main-describe {
+                img {
+                    height: 10vh;
+                    width: 11vh;
+                }
+                h2 {
+                    align-self: center;
+                    font-size: 2rem;
+                }
+                p {
+                    height: 6vh;
+                    font-size: 1.3rem;
+                }
+            }
+            .specializations {
+                .can-do {
+                    justify-content: space-around;
+                    img {
+                        height: 6vh;
+                        width: 6vh;
+                    }
+                    .spec-content {
+                        width: 70%;
+                        p {
+                            font-size: 1.1rem;
+                        }
+                        h2 {
+                            font-size: 1.5rem;
+                            line-height: 1.1em;
+                        }
+                        margin-bottom: 8vh;
+                    }
+                }
+            }
+        }
+    }
+}

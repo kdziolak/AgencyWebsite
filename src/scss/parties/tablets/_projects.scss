@@ -1,0 +1,62 @@
+@media only screen and (orientation: portrait) and (min-device-width: 600px) and (max-device-width: 1024px) {
+    .projects {
+        .head {
+            margin: 2vh;
+            img {
+                height: 15vh;
+                width: 14vh;
+            }
+            h2 {
+                font-size: 2rem;
+            }
+            p {
+                font-size: 1.3rem;
+            }
+        }
+        .categories-btn {
+            .btn {
+                width: 32.7%;
+                height: 4vh;
+            }
+        }
+        .boxes {
+            width: $getWidth;
+            padding-top: 5vh;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            .box {
+                height: 31vh;
+                width: 48%;
+                .project-btn {
+                    @include flex(flex, row, space-around, flex-end);
+                    button {
+                        height: 7vh;
+                        width: 50%;
+                        border-left: 1px solid $line-color;
+                        &:first-child {
+                            border-left: none;
+                            border-right: 1px solid $line-color;
+                        }
+                    }
+                }
+
+                .space-for-img {
+                    align-self: center;
+                    width: 90%;
+                    height: 23vh;
+                    background-color: $line-color;
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        border-radius: 7px;
+                    }
+                }
+            }
+            &:last-child {
+                margin-bottom: 3vh;
+            }
+        }
+    }
+
+}

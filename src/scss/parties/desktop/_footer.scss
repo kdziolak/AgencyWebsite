@@ -1,0 +1,75 @@
+@media only screen and (min-device-width: 1200px) {
+    footer {
+        width: 100%;
+        .foot-container {
+            @include flex();
+            background-color: $footer-color;
+            padding-top: 5vh;
+            form {
+                position: relative;
+                width: 90%;
+                label {
+                    font-size: 1rem;
+                    font-weight: $fw-b;
+                    line-height: 4vh;
+                }
+                input {
+                    width: 100%;
+                    height: 10vh;
+                    border: none;
+                    background-color: rgba(255, 255, 255, .1);
+                    border-radius: 8px;
+                    font-size: 1rem;
+                    color: $light-gray-color;
+                    padding-left: 2.3rem;
+                    margin-top: 0.3rem;
+                    outline: none;
+                }
+                button {
+                    position: absolute;
+                    left: 78%;
+                    top: 51%;
+                    background-color: rgba(255, 255, 255, 0.2);
+                    padding: 1vh 2.1vh;
+                    border-radius: 7px;
+                    font-size: 1.2rem;
+                    color: $light-gray-color;
+                }
+                span {
+                    position: absolute;
+                    font-size: 1.5rem;
+                    left: 3%;
+                    top: 55%;
+                }
+            }
+            .social-media {
+                @include flex(flex, row);
+                justify-content: space-around;
+                width: $getWidth;
+                height: 7vh;
+                text-align: center;
+                margin-top: 10vh;
+                font-size: 1.8rem;
+            }
+            .references {
+                @include flex(flex);
+                justify-content: space-around;
+                font-size: 1rem;
+                line-height: 1.2rem;
+                font-weight: $fw-b;
+                margin-top: 7vh;
+            }
+            .copyright {
+                @include flex();
+                justify-content: center;
+                margin-top: 7vh;
+                margin-bottom: 5vh;
+                p {
+                    text-align: center;
+                    width: 80%;
+                    font-size: 0.9rem;
+                }
+            }
+        }
+    }
+}

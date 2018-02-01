@@ -1,0 +1,36 @@
+@media only screen and (orientation: portrait) and (min-device-width: 600px) and (max-device-width: 1024px) {
+    main {
+        .team-section {
+            @include flex();
+            .head {
+                margin: 0;
+                img {
+                    margin-top: 5vh;
+                    height: 16vh;
+                    width: 14vh;
+                }
+                h2 {
+                    font-size: 2rem;
+                }
+                p {
+                    font-size: 1.3rem;
+                }
+            }
+            .boxes-team {
+                width: $getWidth;
+                @include flex();
+                flex-direction: row;
+                justify-content: space-between;
+                flex-wrap: wrap;
+                align-items: baseline;
+                margin: 1vh;
+                .box-team {
+                    height: 32vh;
+                    width: 26vh;
+                    margin: 0;
+                    margin-bottom: 4vh;
+                }
+            }
+        }
+    }
+}

@@ -32,7 +32,7 @@
             flex-direction: column;
             .intro {
                 align-self: center;
-                padding-bottom: 5vh;
+                padding-bottom: 0vh;
                 h1 {
                     font-size: 2rem;
                     line-height: .8em;
@@ -61,10 +61,16 @@
         .information {
             .article {
                 .lamp {
-                    width: 20vw;
+                    margin-top: 10vh;
+                    height: 23vh;
+                    width: 21vh;
+                    margin-bottom: 3vh;
                 }
                 .tree {
-                    width: 20vw;
+                    margin-top: 10vh;
+                    height: 23vh;
+                    width: 23vh;
+                    margin-bottom: 3vh;
                 }
                 p {
                     font-size: 1.1rem;

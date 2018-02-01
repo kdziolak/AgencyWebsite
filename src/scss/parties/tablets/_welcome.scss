@@ -1,0 +1,91 @@
+@media only screen and (orientation: portrait) and (min-device-width: 600px) and (max-device-width: 1024px) {
+    .page-header {
+        .logo-section {
+            position: relative;
+            height: 10vh;
+            .logo {
+                @include flex();
+                a {
+                    img {
+                        width: 24vh;
+                        height: 12vh;
+                    }
+                }
+            }
+        }
+        .navigation {
+            .fa-bars {
+                top: 3vh;
+                left: 3vh;
+                font-size: 3rem;
+            }
+            nav {
+                .nav-list {
+                    a {
+                        font-size: 2rem;
+                    }
+                }
+            }
+        }
+        .welcome {
+            .intro {
+                h1 {
+
+                    font-size: 3rem;
+                    line-height: .9em;
+                    .smaller-text {
+                        font-size: 2rem;
+                    }
+                    .and-icon {
+                        font-size: 6rem;
+                        top: 1.5vh;
+                    }
+                }
+
+            }
+            .slider {
+                .slide {
+                    display: flex;
+                    .slide-img {
+                        height: 23vh;
+                        width: 26vh;
+                    }
+                }
+                .next {
+                    height: 23vh;
+                    width: 8vh;
+                    font-size: 2.7rem;
+                }
+            }
+        }
+        .information {
+            width: 100%;
+            display: flex;
+            align-items: baseline;
+            justify-content: space-around;
+            .article {
+                margin: 0;
+                width: 40%;
+                .lamp {
+                    margin-top: 10vh;
+                    height: 10vh;
+                    width: 9vh;
+                    margin-bottom: 3vh;
+                }
+                .tree {
+                    margin-top: 10vh;
+                    height: 10vh;
+                    width: 9vh;
+                    margin-bottom: 3vh;
+                }
+                h2 {
+                    font-size: 1.6rem;
+                }
+                p {
+                    text-align: justify;
+                    font-size: 1.2rem;
+                }
+            }
+        }
+    }
+}

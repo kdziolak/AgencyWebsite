@@ -1,67 +1,98 @@
-.projects {
-    @include flex();
-    justify-content: flex-start;
-    background: $line-color;
-    .categories-btn {
-        width: $getWidth;
-        .btn {
-            width: 48%;
-            height: 5vh;
-            padding: 1%;
-            margin-top: 1vh;
-            font-size: 1rem;
-            border: 2px solid $light-gray-color;
-            color: $light-gray-color;
-            border-radius: 5px;
-            transition: .3s ease-in;
-            &:hover {
-                background-color: white;
-                border: white;
-                color: $gray-color;
+@media only screen and (min-device-width: 1200px) {
+    .projects {
+        @include flex();
+        justify-content: flex-start;
+        align-items: center;
+        background: $line-color;
+        .head {
+            width: 1000px;
+            margin: 0 auto;
+            @include flex();
+            flex-direction: row;
+            align-items: flex-start;
+            margin-bottom: 7vh;
+            img {
+                transform: scale(1);
+                margin: 0;
+                padding: 0;
+                align-self: flex-start;
+                width: 6rem;
+                height: 7rem;
+                margin-right: 4vh;
+            }
+            .desc-content {
+                width: 30%;
+                margin-top: 3vh;
+                h2 {
+                    font-size: 2rem;
+                }
+                p {
+                    font-size: 1rem;
+                }
+
             }
         }
-        .active {
-            background-color: white;
-            border: white;
-            color: $gray-color;
+        .categories-btn {
+            width: 750px;
+            margin: 0 auto;
+            @include flex();
+            flex-direction: row;
+            justify-content: space-around;
+            .btn {
+                padding: 0;
+                margin: 0;
+                width: auto;
+                height: 5vh;
+                padding: 0rem 2.5rem 0rem 2.5rem;
+                font-size: 0.9rem;
+                cursor: pointer;
+            }
         }
-    }
-    .boxes {
-        padding-top: 10vh;
-        .box {
-            @include flex(flex, column, flex-end, space-around);
-            height: 39vh;
-            width: 37vh;
-            background-color: white;
-            border-radius: 4px;
-            margin-bottom: 5vh;
-            .project-btn {
-                @include flex(flex, row, space-around, flex-end);
-                button {
-                    height: 7vh;
-                    width: 50%;
-                    border-left: 1px solid $line-color;
-                    &:first-child {
-                        border-left: none;
-                        border-right: 1px solid $line-color;
+        .boxes {
+            @include flex();
+            flex-direction: row;
+            justify-content: flex-start;
+            width: 1000px;
+            margin: 0 auto;
+            padding-top: 5vh;
+            .box {
+                @include flex(flex, column, flex-end, space-around);
+                height: 240px;
+                width: 230px;
+                background-color: white;
+                margin-left: 10px;
+                margin-right: 10px;
+                border-radius: 4px;
+                margin-bottom: 20px;
+                .project-btn {
+                    @include flex(flex, row, space-around, flex-end);
+                    button {
+                        height: 50px;
+                        width: 50%;
+                        border-left: 1px solid $line-color;
+                        cursor: pointer;
+                        &:first-child {
+                            border-left: none;
+                            border-right: 1px solid $line-color;
+                        }
+                    }
+                }
+
+                .space-for-img {
+                    align-self: center;
+                    width: 90%;
+                    height: 75%;
+                    background-color: $line-color;
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        border-radius: 7px;
                     }
                 }
             }
-
-            .space-for-img {
-                align-self: center;
-                width: 90%;
-                height: 30vh;
-                background-color: $line-color;
-                img {
-                    width: 100%;
-                    height: 100%;
-                    border-radius: 7px;
-                }
+            &:last-child {
+                margin-bottom: 7vh;
             }
-        }
-        &:last-child {
-            margin-bottom: 7vh;
         }
     }
 }

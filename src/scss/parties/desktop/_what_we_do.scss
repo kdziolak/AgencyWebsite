@@ -1,67 +1,97 @@
-main {
-    width: 100%;
-    .what-we-do {
-        @include flex(flex, column, flex-start);
-        .line {
-            position: relative;
-            height: 6vh;
-            width: 80%;
-            border-top: 0.3vh solid $line-color;
-            border-top-left-radius: 50%;
-            border-top-right-radius: 50%;
-            background: white;
-            margin-top: 10%;
-            margin-bottom: 5%;
-        }
-        .main-describe {
-            width: $getWidth;
-            @include flex(flex, column, center) img {
-                align-self: center;
-                height: 14vh;
-                width: 16vh;
-                margin-bottom: 3vh;
+@media only screen and (min-device-width: 1200px) {
+
+    main {
+        width: 100%;
+        .what-we-do {
+            @include flex(flex, column, flex-start);
+            .line {
+                width: $desktopWidth;
+                margin-top: 10vh;
+                margin-bottom: 8vh;
             }
-            h2 {
-                align-self: center;
-            }
-            p {
-                height: 10vh;
-                border-bottom: .3vh solid $line-color;
-            }
-        }
-        .specializations {
-            width: $getWidth;
-            margin-top: 5vh;
-            .can-do {
-                display: flex;
-                justify-content: space-between;
+            .main-describe {
+                width: $desktopWidth;
+                height: 12vh;
+                @include flex(flex, row, center);
+                align-items: center;
+                margin-bottom: 5vh;
                 img {
-                    align-content: flex-start;
-                    height: 9vh;
-                    width: 9vh;
+                    height: 6rem;
+                    width: 7rem;
+                    margin-bottom: 0vh;
                 }
-                .spec-content {
-                    width: 70%;
+                .desc-content {
+                    margin-left: 4vh;
+                    @include flex();
+                    height: 1vh;
+                    line-height: 2.5em;
                     h2 {
-                        font-size: 1.1rem;
-                        line-height: 1.1em;
+                        margin: 0;
+                        align-self: flex-start;
+                        font-size: 2rem;
                     }
-                    margin-bottom: 8vh;
+                    p {
+                        height: 10vh;
+                        border-bottom: none;
+                        font-size: 1rem;
+                    }
                 }
             }
-            .mobile {
-                img {
-                    margin-left: 2vh;
-                    width: 6vh;
+            .specializations {
+                width: $desktopWidth;
+                @include flex();
+                flex-direction: row;
+                justify-content: space-around;
+                align-items: flex-start;
+
+                margin-bottom: 10vh;
+                .left-side {
+                    padding-right: 3rem;
+                    border-right: 2px solid $line-color;
+                }
+                .left-side,
+                .right-side {
+                    width: 45%;
+                    .can-do {
+                        display: flex;
+                        justify-content: space-around;
+                        height: 20vh;
+                        margin-bottom: 5vh;
+                        img {
+                            align-content: flex-start;
+                            height: 4rem;
+                            width: 4rem;
+                        }
+                        .spec-content {
+                            h2 {
+                                font-size: 1.2rem;
+                                line-height: 1rem;
+                            }
+                            p {
+                                font-size: 1rem;
+                                text-align: justify;
+                            }
+                            margin-bottom: 0vh;
+                        }
+                        &:last-child {
+                            margin: 0;
+                        }
+                    }
+                    .mobile {
+                        img {
+                            margin-left: 0vh;
+                            width: 7vh;
+                        }
+                    }
                 }
             }
-        }
-        .divide {
-            height: 8vh;
-            width: 120%;
-            border-top-left-radius: 50%;
-            border-top-right-radius: 50%;
-            background-color: $line-color;
+            .divide {
+                height: 8vh;
+                width: 120%;
+                border-top-left-radius: 50%;
+                border-top-right-radius: 50%;
+                background-color: $line-color;
+            }
         }
     }
 }

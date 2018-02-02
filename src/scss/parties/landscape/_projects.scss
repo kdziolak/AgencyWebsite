@@ -5,16 +5,19 @@
                 height: 50vh;
                 width: 45vh;
             }
-            h2 {
-                font-size: 2rem;
+            .desc-content {
+                h2 {
+                    font-size: 2rem;
+                }
+                p {
+                    font-size: 1.1rem;
+                }
             }
-            p {
-                font-size: 1.1rem;
-            }
+
         }
         .categories-btn {
             .btn {
-                height: 10vh;
+                height: 15vh;
                 margin-top: 2vh;
                 font-size: 1.1rem;
             }

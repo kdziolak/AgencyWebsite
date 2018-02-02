@@ -21,12 +21,15 @@ main {
                 width: 16vh;
                 margin-bottom: 3vh;
             }
-            h2 {
-                align-self: center;
-            }
-            p {
-                height: 10vh;
-                border-bottom: .3vh solid $line-color;
+            .desc-content {
+                text-align: center;
+                h2 {
+                    align-self: center;
+                }
+                p {
+                    height: 10vh;
+                    border-bottom: .3vh solid $line-color;
+                }
             }
         }
         .specializations {

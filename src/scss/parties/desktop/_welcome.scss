@@ -60,7 +60,7 @@
 
         }
         .logo-section {
-            width: 1000px;
+            width: $desktopWidth;
             margin: 0 auto;
             padding: 0 5vh;
             @include flex();
@@ -107,7 +107,7 @@
                 flex-direction: row;
                 justify-content: space-between;
                 height: inherit;
-                width: 1000px;
+                width: $desktopWidth;
                 margin: 0 auto;
                 position: static;
                 transition: none;
@@ -125,7 +125,7 @@
                         @include flex();
                         align-items: center;
                         list-style-type: none;
-                        font-size: .7rem;
+                        font-size: .6rem;
                         font-weight: $fw-b;
                         width: 100%;
                         height: 100%;
@@ -191,7 +191,7 @@
 
             }
             .slider {
-                width: 1000px;
+                width: $desktopWidth;
                 margin: 0 auto;
                 justify-content: flex-end;
                 margin-top: 6vh;
@@ -245,7 +245,7 @@
             flex-direction: row;
             align-items: baseline;
             justify-content: space-between;
-            width: 1000px;
+            width: $desktopWidth;
             margin: 0 auto;
             margin-top: 5vh;
             .article {
@@ -257,20 +257,20 @@
                 margin-bottom: 0vh;
                 .lamp {
                     margin: 0;
-                    height: 10vh;
-                    width: 9vh;
+                    height: 6rem;
+                    width: 5rem;
                     margin-bottom: 3vh;
-                    margin-right: 1rem;
+                    margin-right: 1.5rem;
                 }
                 .tree {
                     margin: 0;
-                    height: 10vh;
-                    width: 9vh;
+                    height: 6rem;
+                    width: 5rem;
                     margin-bottom: 3vh;
-                    margin-right: 1rem;
+                    margin-right: 1.5rem;
 
                 }
-                span {
+                .desc-content {
                     h2 {
                         text-align: left;
                     }
@@ -279,6 +279,8 @@
                         font-size: 1rem;
                     }
                 }
+
+
             }
         }
     }

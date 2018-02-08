@@ -1,4 +1,4 @@
-@media only screen and (orientation: portrait) and (min-device-width: 600px) and (max-device-width: 1024px) {
+@media only screen and (min-device-width: 600px) and (max-device-width: 1024px) {
     .projects {
         .head {
             margin: 2vh;
@@ -15,8 +15,8 @@
         }
         .categories-btn {
             .btn {
-                width: 32.7%;
-                height: 4vh;
+                width: 32%;
+                height: 2.5rem;
             }
         }
         .boxes {
@@ -24,10 +24,14 @@
             padding-top: 5vh;
             display: flex;
             flex-wrap: wrap;
-            justify-content: space-between;
+            justify-content: space-around;
             .box {
-                height: 31vh;
-                width: 48%;
+                margin-left: 0.3rem;
+                margin-right: 0.3rem;
+                margin-bottom: 2rem;
+                height: 16rem;
+                width: 45%;
+                max-width: 17rem;
                 .project-btn {
                     @include flex(flex, row, space-around, flex-end);
                     button {
@@ -44,7 +48,7 @@
                 .space-for-img {
                     align-self: center;
                     width: 90%;
-                    height: 23vh;
+                    height: 29vh;
                     background-color: $line-color;
                     img {
                         width: 100%;

@@ -1,6 +1,11 @@
 main {
     .team-section {
         @include flex();
+        .head {
+            h2 {
+                text-align: center;
+            }
+        }
         .boxes-team {
             margin-bottom: 8vh;
             .box-team {

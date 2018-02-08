@@ -2,11 +2,16 @@
     @include flex();
     justify-content: flex-start;
     background: $line-color;
+    .head {
+        h2 {
+            text-align: center;
+        }
+    }
     .categories-btn {
         width: $getWidth;
         .btn {
             width: 48%;
-            height: 5vh;
+            height: 2rem;
             padding: 1%;
             margin-top: 1vh;
             font-size: 1rem;
@@ -16,7 +21,7 @@
             transition: .3s ease-in;
             &:hover {
                 background-color: white;
-                border: white;
+                border: 2px solid white;
                 color: $gray-color;
             }
         }

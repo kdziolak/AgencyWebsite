@@ -1,55 +1,62 @@
-@media only screen and (orientation: portrait) and (min-device-width: 600px) and (max-device-width: 1024px) {
+@media only screen and (min-device-width: 600px) and (max-device-width: 1024px) {
     footer {
         .foot-container {
-            form {
-                label {
-                    font-size: 1.3rem;
+            .top-foot {
+                form {
+                    label {
+                        font-size: 1.1rem;
+                    }
+                    input {
+                        height: 3.5rem;
+                        font-size: 1.1rem;
+                        padding-left: 4rem;
+                    }
+                    button {
+                        left: 85%;
+                        top: 50%;
+                        font-size: 1.2rem;
+                        max-width: 4.5rem;
+                        max-height: 2.3rem;
+                    }
+                    span {
+                        font-size: 2rem;
+                        left: 3%;
+                        top: 51%;
+                    }
                 }
-                input {
-                    height: 6vh;
-                    font-size: 1.1rem;
-                    padding-left: 4rem;
-                }
-                button {
-                    left: 85%;
-                    top: 52%;
-                    font-size: 1.2rem;
-                }
-                span {
-                    font-size: 2rem;
-                    left: 3%;
-                    top: 55%;
-                }
-            }
-            .social-media {
-                @include flex(flex, row);
-                justify-content: space-around;
-                width: $getWidth;
-                height: 7vh;
-                text-align: center;
-                margin-top: 5vh;
-                font-size: 2.5rem;
-            }
-            .references {
-                width: 80%;
-                @include flex(flex);
-                flex-direction: row;
-                justify-content: space-around;
-                font-size: 1.1rem;
-                line-height: 1.2rem;
-                font-weight: $fw-b;
-                margin-top: 5vh;
-            }
-            .copyright {
-                margin-top: 5vh;
-                margin-bottom: 3vh;
-                p {
+                .social-media {
+                    @include flex(flex, row);
+                    justify-content: space-around;
+                    width: $getWidth;
+                    height: 7vh;
                     text-align: center;
-                    width: 100%;
-                    font-size: 1rem;
+                    margin-top: 2vh;
+                    font-size: 2rem;
+                }
+            }
+            .bottom-foot {
+                @include flex();
+                .references {
+                    p {
+                        width: 100%;
+                        @include flex(flex);
+                        justify-content: space-around;
+                        font-size: 1rem;
+                        line-height: 1.2rem;
+                        font-weight: $fw-b;
+                        margin-top: 2vh;
+                    }
+                }
+                .copyright {
+                    margin-top: 4vh;
+                    margin-bottom: 3vh;
+                    p {
+                        text-align: center;
+                        width: 100%;
+                        font-size: 1rem;
+                    }
                 }
             }
         }
     }
-
 }

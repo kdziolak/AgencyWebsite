@@ -1,4 +1,4 @@
-@media only screen and (orientation: portrait) and (min-device-width: 600px) and (max-device-width: 1024px) {
+@media only screen and (min-device-width: 600px) and (max-device-width: 1024px) {
     main {
         .team-section {
             @include flex();
@@ -20,15 +20,19 @@
                 width: $getWidth;
                 @include flex();
                 flex-direction: row;
-                justify-content: space-between;
+                justify-content: space-around;
                 flex-wrap: wrap;
                 align-items: baseline;
                 margin: 1vh;
                 .box-team {
-                    height: 32vh;
-                    width: 26vh;
+                    height: 19rem;
+                    width: 45%;
+                    min-width: 13rem;
+                    max-width: 17rem;
                     margin: 0;
-                    margin-bottom: 4vh;
+                    margin-bottom: 1.5rem;
+                    margin-left: .4rem;
+                    margin-right: .4rem;
                 }
             }
         }

@@ -2,41 +2,48 @@
     footer {
         .foot-container {
             padding-top: 10vh;
-            form {
-                label {
-                    font-size: 1.3rem;
-                    font-weight: $fw-b;
+            @include flex();
+            justify-content: center;
+            .top-foot {
+                form {
+                    label {
+                        font-size: 1.3rem;
+                        font-weight: $fw-b;
+                    }
+                    input {
+                        height: 17vh;
+                    }
+                    button {
+                        left: 83%;
+                        top: 47%;
+                        height: 12vh;
+                        width: 22vh;
+                        font-size: 1.4rem;
+                    }
+                    span {
+                        font-size: 1.7rem;
+                    }
                 }
-                input {
-                    height: 17vh;
-                }
-                button {
-                    left: 83%;
-                    top: 47%;
-                    height: 12vh;
-                    width: 22vh;
-                    font-size: 1.4rem;
-                }
-                span {
-                    font-size: 1.7rem;
-                }
-            }
-            .social-media {
-                margin-top: 13vh;
-                font-size: 2.1rem;
-            }
-            .references {
-                font-size: 1.2rem;
-                line-height: 1.3rem;
-                margin-top: 15vh;
-            }
-            .copyright {
-                margin-top: 10vh;
-                p {
-                    width: 100%;
-                    font-size: 1rem;
+                .social-media {
+                    margin-top: 13vh;
+                    font-size: 2.1rem;
                 }
             }
+            .bottom-foot {
+                .references {
+                    font-size: 1.2rem;
+                    line-height: 1.3rem;
+                    margin-top: 15vh;
+                }
+                .copyright {
+                    margin-top: 10vh;
+                    p {
+                        width: 100%;
+                        font-size: 1rem;
+                    }
+                }
+            }
+
         }
     }
 

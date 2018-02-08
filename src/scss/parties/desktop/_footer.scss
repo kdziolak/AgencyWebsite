@@ -1,73 +1,122 @@
 @media only screen and (min-device-width: 1200px) {
     footer {
+        background-color: $footer-color;
+        .map {
+            display: block;
+            width: 100%;
+            height: 55vh;
+            iframe {
+                width: 100%;
+                height: 100%;
+            }
+        }
         width: 100%;
         .foot-container {
-            @include flex();
-            background-color: $footer-color;
+            display: block;
             padding-top: 5vh;
-            form {
-                position: relative;
-                width: 90%;
-                label {
-                    font-size: 1rem;
-                    font-weight: $fw-b;
-                    line-height: 4vh;
-                }
-                input {
-                    width: 100%;
-                    height: 10vh;
-                    border: none;
-                    background-color: rgba(255, 255, 255, .1);
-                    border-radius: 8px;
-                    font-size: 1rem;
-                    color: $light-gray-color;
-                    padding-left: 2.3rem;
-                    margin-top: 0.3rem;
-                    outline: none;
-                }
-                button {
-                    position: absolute;
-                    left: 78%;
-                    top: 51%;
-                    background-color: rgba(255, 255, 255, 0.2);
-                    padding: 1vh 2.1vh;
-                    border-radius: 7px;
-                    font-size: 1.2rem;
-                    color: $light-gray-color;
-                }
-                span {
-                    position: absolute;
-                    font-size: 1.5rem;
-                    left: 3%;
-                    top: 55%;
-                }
-            }
-            .social-media {
-                @include flex(flex, row);
-                justify-content: space-around;
-                width: $getWidth;
-                height: 7vh;
-                text-align: center;
-                margin-top: 10vh;
-                font-size: 1.8rem;
-            }
-            .references {
-                @include flex(flex);
-                justify-content: space-around;
-                font-size: 1rem;
-                line-height: 1.2rem;
-                font-weight: $fw-b;
-                margin-top: 7vh;
-            }
-            .copyright {
+            padding-bottom: 5vh;
+            width: 1000px;
+            margin: 0 auto;
+            .top-foot {
                 @include flex();
-                justify-content: center;
-                margin-top: 7vh;
-                margin-bottom: 5vh;
-                p {
+                justify-content: space-between;
+                align-items: center;
+                flex-direction: row-reverse;
+                form {
+                    position: relative;
+                    width: 50%;
+                    label {
+                        display: none;
+                    }
+                    input {
+                        width: 100%;
+                        height: 3rem;
+                        border: none;
+                        background-color: rgba(255, 255, 255, .1);
+                        border-radius: 8px;
+                        font-size: 1rem;
+                        color: $light-gray-color;
+                        padding-left: 2.3rem;
+                        margin-top: 0.3rem;
+                        outline: none;
+                    }
+                    button {
+                        width: 5rem;
+                        height: 2.2rem;
+                        position: absolute;
+                        left: 82%;
+                        top: 53%;
+                        transform: translateY(-50%);
+                        background-color: rgba(255, 255, 255, 0.2);
+                        padding: 1vh 2.1vh;
+                        border-radius: 10px;
+                        font-size: 1.1rem;
+                        color: $light-gray-color;
+                        cursor: pointer;
+                    }
+                    span {
+                        position: absolute;
+                        font-size: 2rem;
+                        left: 3%;
+                        top: 51%;
+                        transform: translateY(-50%);
+                    }
+                }
+                .social-media {
+                    @include flex(flex, row);
+                    align-items: flex-start;
+                    justify-content: center;
+                    width: 30%;
+                    height: 5vh;
                     text-align: center;
-                    width: 80%;
-                    font-size: 0.9rem;
+                    margin-top: 0vh;
+                    font-size: 1.4rem;
+                    a {
+                        display: flex;
+                        align-items: center;
+                        height: 100%;
+                        border-left: 1px solid $gray-color;
+                        padding-left: 1rem;
+                        padding-right: 1rem;
+                        cursor: pointer;
+                        &:last-child {
+                            border-right: 1px solid $gray-color;
+                        }
+                    }
+                }
+            }
+            .bottom-foot {
+                margin-top: 3rem;
+                @include flex();
+                flex-direction: row-reverse;
+                justify-content: space-between;
+                align-items: center;
+                .references {
+                    margin-top: 0;
+                    p {
+                        @include flex();
+                        flex-direction: row;
+                        font-size: 0.8rem;
+                        line-height: 1.2rem;
+                        font-weight: $fw-n;
+                        margin-top: 0vh;
+                        a {
+                            font-size: 0.9rem;
+                        }
+                    }
+                }
+                .copyright {
+                    @include flex();
+                    align-items: flex-start;
+                    width: 50%;
+                    justify-content: flex-start;
+                    margin-top: 0vh;
+                    margin-bottom: 0vh;
+                    p {
+                        text-align: center;
+                        width: 80%;
+                        font-size: 0.9rem;
+                    }
                 }
             }
         }

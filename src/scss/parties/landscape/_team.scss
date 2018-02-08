@@ -6,12 +6,19 @@
                     height: 50vh;
                     width: 42vh;
                 }
-                h2 {
-                    font-size: 2rem;
+                .desc-content {
+                    h2 {
+                        text-align: center;
+                        font-size: 2rem;
+                    }
+                    p {
+                        font-size: 1.1rem;
+                    }
                 }
-                p {
-                    font-size: 1.1rem;
-                }
+
+            }
+            .btn {
+                height: 5vh;
             }
             .boxes-team {
                 width: 80%;
@@ -22,7 +29,7 @@
                 .box-team {
                     @include flex();
                     justify-content: space-around;
-                    height: 80vh;
+                    height: 90vh;
                     width: 65vh;
                 }
             }

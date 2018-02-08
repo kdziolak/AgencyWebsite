@@ -130,8 +130,15 @@
                         width: 100%;
                         height: 100%;
                         border-left: 1px solid $line-color;
+                        transition: .3s ease-in;
                         &:first-child {
                             border: none;
+                        }
+                        &:hover {
+                            color: $blue-color;
+                        }
+                        .active {
+                            color: $blue-color;
                         }
                     }
                 }

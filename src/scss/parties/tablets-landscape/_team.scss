@@ -1,4 +1,4 @@
-@media only screen and (orientation: portrait) and (min-device-width: 600px) and (max-device-width: 1024px) {
+@media only screen and (orientation: landscape) and (min-device-width: 700px) and (max-device-width: 1199px) {
     main {
         .team-section {
             @include flex();
@@ -6,8 +6,8 @@
                 margin: 0;
                 img {
                     margin-top: 5vh;
-                    height: 16vh;
-                    width: 14vh;
+                    height: 20vh;
+                    width: 17vh;
                 }
                 h2 {
                     font-size: 2rem;
@@ -25,7 +25,7 @@
                 align-items: baseline;
                 margin: 1vh;
                 .box-team {
-                    height: 19rem;
+                    height: 22rem;
                     width: 45%;
                     min-width: 13rem;
                     max-width: 17rem;

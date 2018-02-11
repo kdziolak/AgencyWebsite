@@ -1,4 +1,4 @@
-@media only screen and (orientation: portrait) and (min-device-width: 600px) and (max-device-width: 1024px) {
+@media only screen and (orientation: landscape) and (min-device-width: 700px) and (max-device-width: 1199px) {
     .page-header {
         .logo-section {
             position: relative;
@@ -9,8 +9,8 @@
                     margin-top: 1vh;
                     align-self: center;
                     img {
-                        width: 7vh;
-                        height: 7vh;
+                        width: 8vh;
+                        height: 8vh;
                     }
                 }
             }
@@ -19,21 +19,20 @@
             .fa-bars {
                 top: 3vh;
                 left: 3vh;
-                font-size: 3rem;
+                font-size: 2.5rem;
             }
         }
         .welcome {
             .intro {
                 h1 {
-
                     font-size: 3rem;
-                    line-height: .9em;
+                    line-height: .8em;
                     .smaller-text {
                         font-size: 2rem;
                     }
                     .and-icon {
                         font-size: 6rem;
-                        top: 1.5vh;
+                        top: 1rem;
                     }
                 }
 
@@ -43,7 +42,7 @@
                     display: flex;
                     .slide-img {
                         height: 23vh;
-                        width: 26vh;
+                        width: 30vh;
                     }
                 }
                 .next {

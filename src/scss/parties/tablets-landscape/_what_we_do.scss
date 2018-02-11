@@ -1,10 +1,10 @@
-@media only screen and (orientation: portrait) and (min-device-width: 600px) and (max-device-width: 1024px) {
+@media only screen and (orientation: landscape) and (min-device-width: 700px) and (max-device-width: 1200px) {
     main {
         .what-we-do {
             .main-describe {
                 img {
-                    height: 10vh;
-                    width: 11vh;
+                    height: 13vh;
+                    width: 15vh;
                 }
                 h2 {
                     align-self: center;
@@ -19,8 +19,8 @@
                 .can-do {
                     justify-content: space-around;
                     img {
-                        height: 6vh;
-                        width: 6vh;
+                        height: 8vh;
+                        width: 8vh;
                     }
                     .spec-content {
                         width: 70%;

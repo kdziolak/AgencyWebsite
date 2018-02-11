@@ -7,10 +7,14 @@
         height: 9vh;
         .logo {
             @include flex();
+            align-self: center;
+            height: 100%;
             a {
+                margin-top: 1vh;
+                align-self: center;
                 img {
-                    width: 22vh;
-                    height: 11vh;
+                    width: 7vh;
+                    height: 7vh;
                 }
             }
         }
@@ -39,13 +43,14 @@
             padding-left: 3vh;
             background-color: $line-color;
             .nav-list {
+                list-style-type: none;
                 @include flex();
                 justify-content: space-around;
                 align-items: flex-start;
                 height: 65vh;
-                a {
-                    list-style-type: none;
-                }
+            }
+            .search {
+                display: none;
             }
         }
         input {
@@ -101,14 +106,14 @@
                 .slide-describe {
                     align-self: flex-end;
                     position: absolute;
-                    padding: .3rem 0;
+                    padding: .6rem 0;
                     width: 100%;
                     display: flex;
                     justify-content: center;
                     background-color: rgba(0, 0, 0, .2);
-                    img {
-                        transform: scale(.7);
-                        margin-right: .2rem;
+                    span {
+                        color: rgba(255, 255, 255, 0.4);
+                        margin-right: 0.5rem;
                     }
                     p {
                         align-self: center;

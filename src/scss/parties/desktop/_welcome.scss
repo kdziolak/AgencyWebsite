@@ -1,6 +1,7 @@
 @media only screen and (min-device-width: 1200px) {
     .page-header {
         .top-header {
+            height: 2.5rem;
             display: block;
             @include flex();
             background-color: $line-color;
@@ -12,7 +13,7 @@
                     width: 35%;
                     a {
                         margin-left: 1vh;
-                        height: 3vh;
+                        height: 1.5rem;
                         width: 100%;
                         @include flex();
                         flex-direction: row;
@@ -34,12 +35,12 @@
                     @include flex();
                     flex-direction: row;
                     a {
-                        padding: 0.7vh 2vh;
+                        padding: 0.3rem 1rem;
                         border-left: 1px solid $light-gray-color;
                         span {
                             font-size: 1.1rem;
                         }
-                        .fa-facebook-official {
+                        .fa-facebook {
                             color: $facebook;
                         }
                         .fa-twitter {
@@ -66,24 +67,25 @@
             @include flex();
             flex-direction: row;
             justify-content: space-between;
-            height: 15vh;
+            height: 7rem;
             .logo {
-                height: 12vh;
-                align-self: flex-end;
+                height: 7rem;
+                align-self: center;
                 a {
                     img {
-                        width: 30vh;
-                        height: 15vh;
+                        margin-left: 5rem;
+                        width: 5rem;
+                        height: 5rem;
                     }
                 }
             }
             .info {
                 display: block;
                 align-self: flex-end;
-                margin-bottom: 3vh;
+                margin-bottom: 1.3rem;
                 span {
                     font-size: 1.5rem;
-                    padding: 0vh 2.5vh;
+                    padding: 0 1.2rem;
                     color: $light-gray-color;
                     border-left: 1px solid $light-gray-color;
                     &:first-child {
@@ -98,7 +100,7 @@
         .navigation {
             box-sizing: content-box;
             border-top: 1px solid $line-color;
-            height: 9vh;
+            height: 4rem;
             .fa-bars {
                 display: none;
             }
@@ -121,16 +123,16 @@
                     flex-direction: row;
                     justify-content: space-around;
                     align-items: center;
-                    a {
+                    li {
                         @include flex();
-                        align-items: center;
-                        list-style-type: none;
-                        font-size: .6rem;
+                        align-self: center;
+                        font-size: .7rem;
                         font-weight: $fw-b;
                         width: 100%;
                         height: 100%;
                         border-left: 1px solid $line-color;
                         transition: .3s ease-in;
+                        cursor: pointer;
                         &:first-child {
                             border: none;
                         }
@@ -145,11 +147,11 @@
                 .search {
                     display: flex;
                     input {
-                        margin-left: 1vh;
+                        margin-left: 0.4rem;
                         display: block;
                         border: none;
                         font-size: .8rem;
-                        margin-right: 4vh;
+                        margin-right: 2rem;
                         outline: none;
                         &:focus::placeholder {
                             color: transparent;
@@ -169,7 +171,6 @@
             padding-top: 15vh;
             padding-bottom: 10vh;
             .intro {
-                width: 590px;
                 h1 {
                     text-align: left;
                     display: flex;
@@ -180,7 +181,8 @@
                     font-size: 2.8rem;
                     line-height: 1em;
                     .smaller-text {
-                        text-align: right;
+                        text-align: left;
+                        margin-left: 4.2rem;
                         white-space: pre;
                         font-size: 2.2rem;
                         font-weight: 300;
@@ -200,27 +202,24 @@
             .slider {
                 width: $desktopWidth;
                 margin: 0 auto;
+                align-items: center;
                 justify-content: flex-end;
                 margin-top: 6vh;
                 .slide {
                     position: relative;
                     display: flex;
+                    align-items: flex-end;
                     .slide-img {
                         height: 12rem;
                         width: 18rem;
                     }
                     .slide-describe {
-                        align-self: flex-end;
                         position: absolute;
-                        padding: .3rem 0;
+                        padding: .6rem 0;
                         width: 100%;
                         display: flex;
                         justify-content: center;
                         background-color: rgba(0, 0, 0, .2);
-                        img {
-                            transform: scale(.7);
-                            margin-right: .2rem;
-                        }
                         p {
                             align-self: center;
                             font-size: 1.2rem;
@@ -242,6 +241,7 @@
                     background-color: $line-color;
                     color: $gray-color;
                     padding-left: 1rem;
+                    cursor: pointer;
                 }
             }
         }

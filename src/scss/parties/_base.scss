@@ -11,6 +11,7 @@ body {
     line-height: $lh;
     color: $gray-color;
     overflow-x: hidden;
+    position: relative;
 }
 
 h2 {
@@ -49,8 +50,24 @@ a {
 }
 
 .container {
-    width: 1000px;
+    width: $desktopWidth;
     @include flex();
     flex-direction: row;
     justify-content: space-between;
+}
+
+.arrow-home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 10vh;
+    height: 10vh;
+    position: fixed;
+    bottom: 5vh;
+    right: 3vh;
+    background: $line-color;
+    border-radius: 50%;
+    box-shadow: 0 0 .2rem black;
+    font-size: 2rem;
+    cursor: pointer;
 }

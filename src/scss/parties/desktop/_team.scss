@@ -4,13 +4,14 @@
             @include flex();
             padding-top: 5vh;
             padding-bottom: 10vh;
-            width: 1000px;
+            width: $desktopWidth;
             margin: 0 auto;
             .head {
                 @include flex();
                 flex-direction: row;
                 margin: 0;
                 img {
+                    margin: 0;
                     transform: scale(1);
                     width: 5.5rem;
                     height: 7rem;
@@ -30,7 +31,7 @@
                 }
             }
             .boxes-team {
-                width: inherit;
+                width: 1000px;
                 @include flex();
                 flex-direction: row;
                 justify-content: flex-start;

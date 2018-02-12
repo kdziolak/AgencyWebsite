@@ -5,7 +5,7 @@
         align-items: center;
         background: $line-color;
         .head {
-            width: 1000px;
+            width: $desktopWidth;
             margin: 0 auto;
             @include flex();
             flex-direction: row;

@@ -42,7 +42,8 @@
             margin-bottom: 5vh;
             .project-btn {
                 @include flex(flex, row, space-around, flex-end);
-                button {
+                a {
+                    @include flex();
                     height: 7vh;
                     width: 50%;
                     border-left: 1px solid $line-color;

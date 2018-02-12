@@ -1,5 +1,5 @@
 @media only screen and (min-device-width: 1200px) {
-    .page-header {
+    header {
         .top-header {
             height: 2.5rem;
             display: block;
@@ -83,13 +83,52 @@
                 display: block;
                 align-self: flex-end;
                 margin-bottom: 1.3rem;
-                span {
+                div {
+                    position: relative;
                     font-size: 1.5rem;
                     padding: 0 1.2rem;
                     color: $light-gray-color;
                     border-left: 1px solid $light-gray-color;
+                    transition: .2s ease-in;
                     &:first-child {
                         border: none;
+                    }
+                    .tooltip {
+                        @include flex();
+                        position: absolute;
+                        padding: 1rem;
+                        bottom: 2rem;
+                        left: -75%;
+                        font-size: 1rem;
+                        font-weight: $fw-n;
+                        width: 10rem;
+                        border-radius: 7px;
+                        height: 2rem;
+                        border: 1.5px solid $light-gray-color;
+                        color: $gray-color;
+                    }
+                    .phone,
+                    .marker,
+                    .env {
+                        visibility: hidden;
+                    }
+                    &:hover {
+                        color: $blue-color;
+                    }
+                }
+                .fa-phone:hover {
+                    span {
+                        visibility: visible;
+                    }
+                }
+                .fa-map-marker-alt:hover {
+                    span {
+                        visibility: visible;
+                    }
+                }
+                .fa-envelope:hover {
+                    span {
+                        visibility: visible;
                     }
                 }
                 .active {

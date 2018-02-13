@@ -31,12 +31,13 @@
                 }
             }
             .boxes-team {
-                width: 1000px;
+                width: $desktopWidth;
                 @include flex();
                 flex-direction: row;
                 justify-content: flex-start;
                 margin-top: 10vh;
                 margin-bottom: 0vh;
+                padding-left: 40px;
                 .box-team {
                     margin: 0;
                     padding: 0;
@@ -75,9 +76,23 @@
                                 padding: .7rem;
                                 font-size: 1.5rem;
                                 color: $light-gray-color;
+                                transition: .4s linear;
                             }
                         }
+                        .fa-facebook:hover {
+                            color: $facebook;
+                        }
+                        .fa-twitter:hover {
+                            color: $twitter;
+                        }
+                        .fa-instagram:hover {
+                            color: $instagram;
+                        }
+                        .fa-linkedin:hover {
+                            color: $linkedin;
+                        }
                     }
+
                     &:first-child {
                         margin-top: 0vh;
                     }

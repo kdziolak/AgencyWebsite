@@ -40,7 +40,7 @@
             background-color: white;
             border-radius: 4px;
             margin-bottom: 5vh;
-            .project-btn {
+            .project-link {
                 @include flex(flex, row, space-around, flex-end);
                 a {
                     @include flex();

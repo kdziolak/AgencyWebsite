@@ -32,7 +32,7 @@
                 height: 16rem;
                 width: 45%;
                 max-width: 17rem;
-                .project-btn {
+                .project-link {
                     @include flex(flex, row, space-around, flex-end);
                     button {
                         height: 7vh;

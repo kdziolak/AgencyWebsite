@@ -42,9 +42,9 @@
             .btn {
                 padding: 0;
                 margin: 0;
-                width: auto;
-                height: 5vh;
-                padding: 0rem 2.5rem 0rem 2.5rem;
+                height: 2rem;
+                margin-left: .5rem;
+                margin-right: .5rem;
                 font-size: 0.9rem;
                 cursor: pointer;
             }
@@ -53,9 +53,10 @@
             @include flex();
             flex-direction: row;
             justify-content: flex-start;
-            width: 1000px;
+            width: $desktopWidth;
             margin: 0 auto;
             padding-top: 5vh;
+            padding-left: 40px;
             .box {
                 @include flex(flex, column, flex-end, space-around);
                 height: 240px;
@@ -65,9 +66,9 @@
                 margin-right: 10px;
                 border-radius: 4px;
                 margin-bottom: 20px;
-                .project-btn {
+                .project-link {
                     @include flex(flex, row, space-around, flex-end);
-                    button {
+                    a {
                         height: 50px;
                         width: 50%;
                         border-left: 1px solid $line-color;
@@ -82,7 +83,7 @@
                 .space-for-img {
                     align-self: center;
                     width: 90%;
-                    height: 75%;
+                    height: 180px;
                     background-color: $line-color;
                     img {
                         width: 100%;

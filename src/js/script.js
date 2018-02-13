@@ -1,9 +1,9 @@
-var bar = document.querySelector('.fa-bars');
-var list = document.querySelector('.nav-list');
-var home = document.querySelector('.arrow-home');
+const bar = document.querySelector('.fa-bars');
+const list = document.querySelector('.nav-list');
+const home = document.querySelector('.arrow-home');
 
-function showMenu() {
-    var menu = document.getElementsByTagName('nav')[0];
+const showMenu = () => {
+    let menu = document.getElementsByTagName('nav')[0];
     if (menu.style.left === '0vh') {
         menu.style.left = -200 + 'vh';
     } else {
@@ -12,15 +12,15 @@ function showMenu() {
 
 }
 
-function scrollToY(element, to, duration) {
-    var start = element.scrollTop,
+const scrollToY = (element, to, duration) => {
+    let start = element.scrollTop,
         change = to - start,
         currentTime = 0,
         increment = 20;
 
-    var animateScroll = function () {
+    let animateScroll = function () {
         currentTime += increment;
-        var val = Math.easeInOutQuad(currentTime, start, change, duration);
+        let val = Math.easeInOutQuad(currentTime, start, change, duration);
         element.scrollTop = val;
         if (currentTime < duration) {
             setTimeout(animateScroll, increment);
@@ -36,17 +36,13 @@ Math.easeInOutQuad = function (t, b, c, d) {
     return -c / 2 * (t * (t - 2) - 1) + b;
 };
 
-function color() {
 
-}
-
-function getChild(e) {
-    var line = document.querySelector('.line');
-    var lamp = document.querySelector('.lamp');
-    var divide = document.querySelector('.divide');
-    var face = document.querySelector('.profile');
-    var face = document.querySelector('.profile');
-    var contact = document.querySelector('.top-foot');
+const getChild = e => {
+    let line = document.querySelector('.line');
+    let lamp = document.querySelector('.lamp');
+    let divide = document.querySelector('.divide');
+    let face = document.querySelector('.profile');
+    let contact = document.querySelector('.top-foot');
     switch (e.target.className) {
         case 'home':
             scrollToY(document.documentElement, 0, 1000);
@@ -69,11 +65,35 @@ function getChild(e) {
     }
 }
 
-function goUp() {
+const goUp = () => {
     scrollToY(document.documentElement, 0, 1000);
 }
+
+
 
 
 home.addEventListener('click', goUp);
 list.addEventListener('click', getChild);
 bar.addEventListener('click', showMenu);
+
+
+$('.slider-items').slick({
+    infinite: true,
+    speed: 1000,
+    autoplay: true,
+    autoplaySpeed: 3000,
+    slidesToShow: 2,
+    slidesToScroll: 1,
+    prevArrow: null,
+    nextArrow: '<button type="button" class="slick-next">></button>',
+    responsive: [
+        {
+            breakpoint: 600,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+            }
+    }
+    ]
+
+});

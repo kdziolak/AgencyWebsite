@@ -12,6 +12,7 @@ var htmlReplace = require('gulp-html-replace');
 var htmlMin = require('gulp-htmlmin');
 var del = require('del');
 var sequence = require('run-sequence');
+var babel = require('gulp-babel')
 
 gulp.task('reload', function () {
     browserSync.reload();
@@ -26,6 +27,9 @@ gulp.task('css', function () {
 
 gulp.task('js', function () {
     return gulp.src('src/js/**/*.js')
+        .pipe(babel({
+            presets: ['env']
+        }))
         .pipe(concat('script.js'))
         .pipe(uglify())
         .pipe(gulp.dest('dist/js'));

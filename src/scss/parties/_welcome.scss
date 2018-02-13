@@ -95,39 +95,39 @@ header {
 
         }
         .slider {
-            display: flex;
-            .slide {
-                position: relative;
+            width: 15rem;
+            .slider-items {
                 display: flex;
-                .slide-img {
-                    height: 25vh;
-                    width: 25vh;
-                }
-                .slide-describe {
-                    align-self: flex-end;
-                    position: absolute;
-                    padding: .6rem 0;
-                    width: 100%;
+                height: 100%;
+                .slide {
+                    position: relative;
                     display: flex;
-                    justify-content: center;
-                    background-color: rgba(0, 0, 0, .2);
-                    span {
-                        color: rgba(255, 255, 255, 0.4);
-                        margin-right: 0.5rem;
+                    .slide-img {
+                        height: 25vh;
+                        width: 100%;
                     }
-                    p {
-                        align-self: center;
-                        font-size: 1.2rem;
-                        color: white;
+                    .slide-describe {
+                        align-self: flex-end;
+                        position: absolute;
+                        padding: .6rem 0;
+                        width: 100%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        background-color: rgba(0, 0, 0, .2);
+                        span {
+                            color: rgba(255, 255, 255, 0.4);
+                            margin-right: 0.5rem;
+                        }
+                        p {
+                            align-self: center;
+                            font-size: 1.2rem;
+                            color: white;
+                        }
                     }
                 }
             }
-            .s2 {
-                display: none;
-            }
-            .next {
-                height: 25vh;
-                width: 10vh;
+            .slick-next {
                 border: none;
                 outline: none;
                 font-size: 2rem;
@@ -136,6 +136,7 @@ header {
                 background-color: $line-color;
                 color: $gray-color;
                 padding-left: 1rem;
+                padding-right: 1rem;
             }
         }
     }

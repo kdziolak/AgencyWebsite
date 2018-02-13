@@ -20,12 +20,12 @@
                 font-size: 2rem;
             }
             nav {
-                width: 50%;
+                width: 40%;
                 padding-top: 15vh;
                 .nav-list {
-                    height: 70vh;
+                    height: 80vh;
                     li {
-                        font-size: 1.6rem;
+                        font-size: 1.2rem;
                     }
                 }
             }
@@ -45,18 +45,15 @@
                         font-size: 3.8rem;
                     }
                 }
-
             }
             .slider {
-                .slide {
-                    .slide-img {
-                        height: 38vh;
-                        width: 42vh;
+                width: 60%;
+                .slider-items {
+                    .slide {
+                        .slide-img {
+                            height: 33vh;
+                        }
                     }
-                }
-                .next {
-                    height: 38vh;
-                    width: 15vh;
                 }
             }
         }

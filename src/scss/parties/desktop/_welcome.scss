@@ -96,16 +96,28 @@
                     .tooltip {
                         @include flex();
                         position: absolute;
-                        padding: 1rem;
-                        bottom: 2rem;
-                        left: -75%;
+                        bottom: 2.5rem;
+                        width: 11rem;
+                        left: -90%;
                         font-size: 1rem;
                         font-weight: $fw-n;
-                        width: 10rem;
                         border-radius: 7px;
                         height: 2rem;
                         border: 1.5px solid $light-gray-color;
                         color: $gray-color;
+                        background: white;
+                    }
+                    span::after {
+                        content: '';
+                        position: absolute;
+                        bottom: -0.5rem;
+                        left: 5rem;
+                        transform: rotate(45deg);
+                        width: .7rem;
+                        height: .7rem;
+                        background: white;
+                        border-right: 1.5px solid $light-gray-color;
+                        border-bottom: 1.5px solid $light-gray-color;
                     }
                     .phone,
                     .marker,
@@ -240,38 +252,37 @@
             }
             .slider {
                 width: $desktopWidth;
-                margin: 0 auto;
-                align-items: center;
+                margin-top: 4rem;
+                display: flex;
                 justify-content: flex-end;
-                margin-top: 6vh;
-                .slide {
-                    position: relative;
-                    display: flex;
-                    align-items: flex-end;
-                    .slide-img {
-                        height: 12rem;
-                        width: 18rem;
-                    }
-                    .slide-describe {
-                        position: absolute;
-                        padding: .6rem 0;
-                        width: 100%;
+                .slider-items {
+                    width: 40rem;
+                    .slide {
+                        position: relative;
                         display: flex;
-                        justify-content: center;
-                        background-color: rgba(0, 0, 0, .2);
-                        p {
-                            align-self: center;
-                            font-size: 1.2rem;
-                            color: white;
+                        align-items: flex-end;
+                        .slide-img {
+                            height: 12rem;
+                            width: 100%;
+                        }
+                        .slide-describe {
+                            position: absolute;
+                            padding: .6rem 0;
+                            width: 100%;
+                            display: flex;
+                            justify-content: center;
+                            background-color: rgba(0, 0, 0, .2);
+                            p {
+                                align-self: center;
+                                font-size: 1.2rem;
+                                color: white;
+                            }
                         }
                     }
+
                 }
-                .s2 {
-                    display: inherit;
-                }
-                .next {
+                .slick-next {
                     height: 12rem;
-                    width: 4rem;
                     border: none;
                     outline: none;
                     font-size: 2rem;
@@ -280,6 +291,7 @@
                     background-color: $line-color;
                     color: $gray-color;
                     padding-left: 1rem;
+                    padding-right: 1rem;
                     cursor: pointer;
                 }
             }

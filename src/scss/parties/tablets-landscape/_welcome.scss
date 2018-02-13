@@ -1,4 +1,4 @@
-@media only screen and (orientation: landscape) and (min-device-width: 700px){
+@media only screen and (orientation: landscape) and (min-device-width: 700px) {
     header {
         .logo-section {
             position: relative;
@@ -41,8 +41,6 @@
                 .slide {
                     display: flex;
                     .slide-img {
-                        height: 23vh;
-                        width: 30vh;
                     }
                 }
                 .next {

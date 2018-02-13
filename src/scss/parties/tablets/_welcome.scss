@@ -1,4 +1,4 @@
-@media only screen and (min-device-width: 580px) and (orientation: portrait){
+@media only screen and (min-device-width: 580px) and (orientation: portrait) {
     header {
         .logo-section {
             position: relative;
@@ -39,17 +39,18 @@
 
             }
             .slider {
-                .slide {
-                    display: flex;
-                    .slide-img {
-                        height: 23vh;
-                        width: 26vh;
+                .slider-images {
+                    .slide {
+                        display: flex;
+                        .slide-img {
+                            height: 23vh;
+                            width: 100%
+                        }
                     }
                 }
-                .next {
-                    height: 23vh;
-                    width: 8vh;
-                    font-size: 2.7rem;
+                .slick-next {
+                    padding-left: 1.5rem;
+                    padding-right: 1.5rem;
                 }
             }
         }

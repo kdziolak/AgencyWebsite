@@ -34,7 +34,7 @@
                 max-width: 17rem;
                 .project-link {
                     @include flex(flex, row, space-around, flex-end);
-                    button {
+                    a {
                         height: 7vh;
                         width: 50%;
                         border-left: 1px solid $line-color;

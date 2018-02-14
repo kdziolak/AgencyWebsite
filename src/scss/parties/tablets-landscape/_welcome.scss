@@ -23,6 +23,7 @@
             }
         }
         .welcome {
+            padding-top: 50vh;
             .intro {
                 h1 {
                     font-size: 3rem;
@@ -38,15 +39,15 @@
 
             }
             .slider {
-                .slide {
-                    display: flex;
-                    .slide-img {
+                margin-top: 15vh;
+                .slider-items {
+                    width: 40rem;
+                    .slide {
+                        height: 14rem;
                     }
-                }
-                .next {
-                    height: 23vh;
-                    width: 8vh;
-                    font-size: 2.7rem;
+                    .slick-next {
+                        height: 14rem;
+                    }
                 }
             }
         }

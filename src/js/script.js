@@ -1,16 +1,7 @@
 const bar = document.querySelector('.fa-bars');
 const list = document.querySelector('.nav-list');
 const home = document.querySelector('.arrow-home');
-
-const showMenu = () => {
-    let menu = document.getElementsByTagName('nav')[0];
-    if (menu.style.left === '0vh') {
-        menu.style.left = -200 + 'vh';
-    } else {
-        menu.style.left = 0 + 'vh';
-    }
-
-}
+const body = document.documentElement;
 
 const scrollToY = (element, to, duration) => {
     let start = element.scrollTop,
@@ -69,12 +60,25 @@ const goUp = () => {
     scrollToY(document.documentElement, 0, 1000);
 }
 
+const showMenu = () => {
+    let menu = document.getElementsByTagName('nav')[0];
+    if (menu.style.left !== '0vh') {
+        menu.style.left = 0 + 'vh';
+    }
+}
 
-
+const menu = e => {
+    let nav = document.getElementsByTagName('nav')[0];
+    if (nav.style.left === '0vh' && e.target !== nav && !(e.target.classList.contains('nav-list'))) {
+        nav.style.left = -200 + 'vh';
+    } else if (e.target.classList.contains('fa-bars')) {
+        showMenu();
+    }
+}
 
 home.addEventListener('click', goUp);
 list.addEventListener('click', getChild);
-bar.addEventListener('click', showMenu);
+document.addEventListener('click', menu);
 
 
 $('.slider-items').slick({
@@ -85,10 +89,10 @@ $('.slider-items').slick({
     slidesToShow: 2,
     slidesToScroll: 1,
     prevArrow: null,
-    nextArrow: '<button type="button" class="slick-next">></button>',
+    nextArrow: '<button type="button" class="slick-next"><span class="fas fa-chevron-right"></span></button>',
     responsive: [
         {
-            breakpoint: 600,
+            breakpoint: 700,
             settings: {
                 slidesToShow: 1,
                 slidesToScroll: 1,

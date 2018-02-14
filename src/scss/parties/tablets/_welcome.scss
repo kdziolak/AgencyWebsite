@@ -39,18 +39,11 @@
 
             }
             .slider {
-                .slider-images {
+                .slider-items {
+                    width: 35rem;
                     .slide {
-                        display: flex;
-                        .slide-img {
-                            height: 23vh;
-                            width: 100%
-                        }
+                        height: 13rem;
                     }
-                }
-                .slick-next {
-                    padding-left: 1.5rem;
-                    padding-right: 1.5rem;
                 }
             }
         }

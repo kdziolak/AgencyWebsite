@@ -48,6 +48,10 @@ header {
                 justify-content: space-around;
                 align-items: flex-start;
                 height: 65vh;
+                li {
+                    border-bottom: 2px solid white;
+                    padding-bottom: 1vh;
+                }
             }
             .search {
                 display: none;
@@ -95,15 +99,16 @@ header {
 
         }
         .slider {
-            width: 15rem;
             .slider-items {
                 display: flex;
+                width: 17rem;
                 height: 100%;
                 .slide {
                     position: relative;
                     display: flex;
+                    height: 10rem;
                     .slide-img {
-                        height: 25vh;
+                        height: 100%;
                         width: 100%;
                     }
                     .slide-describe {

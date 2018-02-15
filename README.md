@@ -1,1 +1,1 @@
-strona
+My first RWD website created in HTML5/CSS3/JS. I also used technologies such as: SASS, Gulp and Slick(Slider).

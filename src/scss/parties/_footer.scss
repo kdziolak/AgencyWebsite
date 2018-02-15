@@ -28,6 +28,9 @@ footer {
                     padding-left: 2.3rem;
                     margin-top: 0.3rem;
                     outline: none;
+                    &::placeholder {
+                        color: transparent;
+                    }
                 }
                 button {
                     position: absolute;

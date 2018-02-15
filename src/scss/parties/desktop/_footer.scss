@@ -39,6 +39,12 @@
                         padding-left: 3.5rem;
                         margin-top: 0.3rem;
                         outline: none;
+                        &::placeholder {
+                            color: $light-gray-color;
+                        }
+                        &:focus::placeholder {
+                            color: transparent;
+                        }
                     }
                     button {
                         width: 5rem;
@@ -75,12 +81,12 @@
                         display: flex;
                         align-items: center;
                         height: 100%;
-                        border-left: 1px solid $gray-color;
+                        border-left: 1.5px solid $gray-color;
                         padding-left: 1rem;
                         padding-right: 1rem;
                         cursor: pointer;
                         &:last-child {
-                            border-right: 1px solid $gray-color;
+                            border-right: 1.5px solid $gray-color;
                         }
                     }
                 }

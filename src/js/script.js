@@ -56,7 +56,7 @@ const getChild = e => {
     }
 }
 
-const goUp = () => {
+const goPageHeader = () => {
     scrollToY(document.documentElement, 0, 1000);
 }
 
@@ -76,28 +76,31 @@ const menu = e => {
     }
 }
 
-home.addEventListener('click', goUp);
+home.addEventListener('click', goPageHeader);
 list.addEventListener('click', getChild);
 document.addEventListener('click', menu);
 
+//jQuery - slider
 
-$('.slider-items').slick({
-    infinite: true,
-    speed: 1000,
-    autoplay: true,
-    autoplaySpeed: 3000,
-    slidesToShow: 2,
-    slidesToScroll: 1,
-    prevArrow: null,
-    nextArrow: '<button type="button" class="slick-next"><span class="fas fa-chevron-right"></span></button>',
-    responsive: [
-        {
-            breakpoint: 700,
-            settings: {
-                slidesToShow: 1,
-                slidesToScroll: 1,
-            }
+$(document).ready(function () {
+    $('.slider-items').slick({
+        infinite: true,
+        speed: 1000,
+        autoplay: true,
+        autoplaySpeed: 3000,
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        prevArrow: null,
+        nextArrow: '<button type="button" class="slick-next"><span class="fas fa-chevron-right"></span></button>',
+        responsive: [
+            {
+                breakpoint: 700,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                }
     }
     ]
 
+    });
 });
